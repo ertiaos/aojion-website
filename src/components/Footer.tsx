@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-gray-500 text-sm">
-            <img src="/images/logo.svg" alt="傲戟" className="h-5 w-auto" />
+            <img src="/aojion-website/images/logo.svg" alt="傲戟" className="h-5 w-auto" />
             <span>© {new Date().getFullYear()} 傲戟 Aojion. All rights reserved.</span>
           </div>
           <div className="flex gap-6 text-sm text-gray-600">
