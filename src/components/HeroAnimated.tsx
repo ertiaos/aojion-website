@@ -193,7 +193,7 @@ export default function HeroAnimated() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-5xl sm:text-6xl lg:text-8xl font-black tracking-tight mb-4 leading-[1.05]"
         >
-          机械弹簧
+          气杆弹簧
           <br />
           <span className="text-brand-blue">擎天之力</span>
         </motion.h1>
@@ -204,7 +204,7 @@ export default function HeroAnimated() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-gray-500 text-base sm:text-lg max-w-md mb-10"
         >
-          15kg 强劲承重 · 360° 全向调节 · 铝合金机身 · 隐藏理线
+          2-12kg 承重 · 360° 全向调节 · 铝合金机身 · 隐藏理线
         </motion.p>
 
         <motion.div
@@ -237,7 +237,7 @@ export default function HeroAnimated() {
           className="flex gap-8 lg:gap-12 mt-16"
         >
           {[
-            { num: "15kg", label: "承重能力" },
+            { num: "2-12kg", label: "承重能力" },
             { num: "360°", label: "全向旋转" },
             { num: "3年", label: "质保承诺" },
           ].map((s) => (
