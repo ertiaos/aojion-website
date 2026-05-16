@@ -2,6 +2,7 @@
 
 import HeroAnimated from "@/components/HeroAnimated";
 import ScrollReveal from "@/components/ScrollReveal";
+import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { products, allFeatures, testimonials } from "@/data/products";
@@ -31,37 +32,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((p, i) => (
             <ScrollReveal key={p.slug} delay={i * 0.15}>
-              {/* Inline product card to avoid extra component import issues */}
-              <motion.div whileHover={{ y: -8 }} transition={{ duration: 0.3 }} className="group">
-                <Link href={`/products/${p.slug}`}>
-                  <div className="bg-[#141414] rounded-2xl overflow-hidden border border-gray-800 group-hover:border-brand-blue/40 transition-all duration-500">
-                    <div className="aspect-square bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] flex items-center justify-center p-8 relative overflow-hidden">
-                      <div className="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      <img
-                        src={p.images.main}
-                        alt={p.name}
-                        className="w-full h-full object-contain relative z-10 group-hover:scale-110 transition-transform duration-500"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).src =
-                            "https://placehold.co/600x600/1a1a1a/666?text=" + p.name;
-                        }}
-                      />
-                    </div>
-                    <div className="p-5">
-                      <h3 className="text-white font-semibold text-base mb-1">{p.name}</h3>
-                      <p className="text-gray-500 text-xs mb-3">{p.subtitle}</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-brand-blue font-bold text-lg">¥{p.price}</span>
-                        {p.originalPrice && (
-                          <span className="text-gray-600 text-xs line-through">
-                            ¥{p.originalPrice}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
+              <ProductCard product={p} />
             </ScrollReveal>
           ))}
         </div>
