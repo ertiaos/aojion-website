@@ -120,7 +120,7 @@ export default function Home() {
         <ScrollReveal delay={0.2}>
           <div className="rounded-3xl overflow-hidden border border-gray-800">
             <img
-              src="/aojion-website/images/k2-scene.svg"
+              src="/images/k2-scene.svg"
               alt="傲戟桌面场景"
               className="w-full h-auto"
               onError={(e) => {

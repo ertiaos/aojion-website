@@ -38,13 +38,13 @@ export const products: Product[] = [
       "夹桌/穿孔双安装方式",
     ],
     images: {
-      main: "/aojion-website/images/k2-main.svg",
+      main: "/images/k2-main.svg",
       gallery: [
-        "/aojion-website/images/k2-gallery-1.svg",
-        "/aojion-website/images/k2-gallery-2.svg",
-        "/aojion-website/images/k2-gallery-3.svg",
+        "/images/k2-gallery-1.svg",
+        "/images/k2-gallery-2.svg",
+        "/images/k2-gallery-3.svg",
       ],
-      scene: "/aojion-website/images/k2-scene.svg",
+      scene: "/images/k2-scene.svg",
     },
     jdLink: "https://search.jd.com/search?keyword=傲戟K2",
     specs: [

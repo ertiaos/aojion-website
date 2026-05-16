@@ -37,7 +37,7 @@ export default function Navbar() {
             className="flex items-center cursor-pointer select-none shrink-0"
           >
             <img
-              src="/aojion-website/images/logo.svg"
+              src="/images/logo.svg"
               alt="傲戟"
               className="h-8 lg:h-9 w-auto"
             />

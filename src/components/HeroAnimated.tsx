@@ -119,7 +119,7 @@ function ProductSilhouette() {
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       >
         <img
-          src="/aojion-website/images/k2-main.svg"
+          src="/images/k2-main.svg"
           alt="傲戟 K2"
           className="w-[280px] md:w-[400px] lg:w-[500px] h-auto opacity-70 drop-shadow-[0_0_60px_rgba(0,102,255,0.15)]"
         />
